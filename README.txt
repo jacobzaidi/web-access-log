@@ -1,0 +1,1 @@
+Unzip access_log.zip and have web_access_log.py and access_log.txt in the same folder before running web_access_log.py.
