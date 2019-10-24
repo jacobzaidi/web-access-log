@@ -12,7 +12,8 @@ the University of Calgary domain. Paths have been removed. Files were numbered f
 first file encountered in the trace. Files retain the original file extension, so that the type of file can
 be determined. Paths of the filenames have been removed. Modified filenames consist of two parts:
 num.type, where num is a unique integer identifier, and type is the extension of the requested file.
-Timestamps have 1 second resolution.
+Timestamps have 1 second resolution.
+
 
 Author: Jacob Zaidi
 """
@@ -395,7 +396,7 @@ class Parser:
         return 'Unsuccessful'
 
 if __name__ == '__main__':
-    logfile = open('access_log', 'r', errors='ignore')
+    logfile = open('access_log.txt', 'r', errors='ignore')
     logParser = Parser()
     logParser.parse(logfile)
     pass
